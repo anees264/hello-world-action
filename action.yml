@@ -1,5 +1,8 @@
 name: 'anees test action'
 description: 'Greet someone and record the time'
+branding:
+  icon: 'bold'  
+  color: 'blue'
 runs:
   using: 'node12'
   main: 'index.js'
