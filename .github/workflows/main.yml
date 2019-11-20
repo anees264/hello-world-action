@@ -16,3 +16,5 @@ jobs:
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was "
+        env:
+          sample_env: Mona
