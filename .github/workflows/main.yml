@@ -11,10 +11,6 @@ jobs:
       - name: Hello world action step
         uses: ./ # Uses an action in the root directory
         id: hello
-        with:
-          who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was "
         env:
-          sample_env: Mona
+          access_token: ${{ secrets.beagle_access_token }}
+          application_token: ${{ secrets.beagle_application_token }}
