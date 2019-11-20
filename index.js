@@ -5,7 +5,7 @@ const request = require("request");
 try {
   const acc_token = process.env.access_token;
   const app_token = process.env.application_token;
-  console.log(JSON.stringify(t_env));
+  console.log(JSON.stringify(acc_token));
   var api = "https://api.beaglesecurity.com/v1/test/start";
   var requestData = {
     "access_token": acc_token,
