@@ -5,8 +5,8 @@ try {
   // `who-to-greet` input defined in action metadata file
   const nameToGreet = core.getInput('who-to-greet');
   var request = require("request");
-  const t_env = process.env.sample_env;
-  console.log(`Your port is ${t_env}`);
+  const t_env = process.env.HOME;
+  console.log(JSON.stringify(t_env));
   // var api = "https://api.beaglesecurity.com/v1/test/start";
   // var requestData = {
     // "access_token": "ikfoh0fpdluw0rvglrtonipe46ctu7bc",
